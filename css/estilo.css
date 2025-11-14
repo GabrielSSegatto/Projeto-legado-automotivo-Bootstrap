@@ -83,18 +83,31 @@ h1, h2, h3, h4, h5, h6 {
 
 /* ----- PERSONALIZAÇÃO DO CARROSSEL DE DESTAQUE ----- */
 
+/* ----- PERSONALIZAÇÃO DO CARROSSEL DE DESTAQUE ----- */
+
+/* 1. O CONTAINER (MOLDURA) DITA A ALTURA */
 #hero-carousel {
-  max-height: 80vh;
+  height: 80vh; /* Altura para Desktop */
   overflow: hidden;
   position: relative; 
 }
 
-.carousel-item img {
-  object-fit: cover;
-  height: 80vh;
+/* 2. FILHOS INTERNOS PREENCHEM A ALTURA */
+.carousel-inner,
+.carousel-item {
+  height: 100%; /* Faz o slide preencher o container */
 }
 
-/*efeito de fusão/degrade*/
+/* 3. A IMAGEM PREENCHE O SLIDE */
+.carousel-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  /* Esta é a regra única de alinhamento que vai funcionar para todas */
+  object-position: center 70%; /* Foca 70% para baixo */
+}
+
+/* 4. SEU EFEITO DE FUSÃO (JÁ ESTAVA ÓTIMO) */
 #hero-carousel::after {
   content: '';
   position: absolute;
@@ -106,6 +119,7 @@ h1, h2, h3, h4, h5, h6 {
   z-index: 2;
 }
 
+/* 5. LEGENDA (JÁ ESTAVA ÓTIMA) */
 .carousel-caption {
   bottom: 3rem; 
   z-index: 3; 
@@ -118,7 +132,6 @@ h1, h2, h3, h4, h5, h6 {
   color: white;
   text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.8);
 }
-
 
 /* ----- PERSONALIZAÇÃO DOS CARDS ----- */
 
@@ -329,21 +342,81 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /* ----- AJUSTES DE RESPONSIVIDADE (MOBILE) ----- */
+/* ----- PERSONALIZAÇÃO DO CARROSSEL DE DESTAQUE ----- */
+
+/* 1. O CONTAINER (MOLDURA) DITA A ALTURA */
+#hero-carousel {
+  height: 80vh; /* Altura para Desktop */
+  overflow: hidden;
+  position: relative; 
+}
+
+/* 2. FILHOS INTERNOS PREENCHEM A ALTURA */
+.carousel-inner,
+.carousel-item {
+  height: 100%; /* Faz o slide preencher o container */
+}
+
+/* 3. A IMAGEM PREENCHE O SLIDE */
+.carousel-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  /* Esta é a regra única de alinhamento que vai funcionar para todas */
+  object-position: center 70%; /* Foca 70% para baixo */
+}
+
+/* 4. SEU EFEITO DE FUSÃO (JÁ ESTAVA ÓTIMO) */
+#hero-carousel::after {
+  content: '';
+  position: absolute;
+  bottom: -1px;
+  left: 0;
+  width: 100%;
+  height: 150px;
+  background: linear-gradient(to top, var(--cor-principal) 0%, transparent 100%);
+  z-index: 2;
+}
+
+/* 5. LEGENDA (JÁ ESTAVA ÓTIMA) */
+.carousel-caption {
+  bottom: 3rem; 
+  z-index: 3; 
+}
+
+.carousel-caption h2 {
+  font-family: 'Oswald', sans-serif;
+  font-size: 3.5em;
+  font-weight: 700;
+  color: white;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.8);
+}
+
+
+/* ----- AJUSTES DE RESPONSIVIDADE (MOBILE) ----- */
 @media (max-width: 767.98px) {
   
-  /* 1. Ajusta a altura */
-  #hero-carousel,
+  /* 1. Muda a altura APENAS do container principal */
+  #hero-carousel {
+    height: 45vh; /* Altura menor para o celular */
+  }
+  
+  /* 2. (OPCIONAL) Ajusta o foco se precisar ser diferente no mobile */
+  /* Se o 'center 70%' do desktop já estiver bom, pode até apagar esta regra */
   .carousel-item img {
-    height: 35vh; /* Mantém a altura reduzida */
-    
-    object-position: 70% 400%;
+    object-position: center bottom; /* Foca 100% na base no celular */
   }
 
+  /* 3. Diminui o texto */
   .carousel-caption h2 {
     font-size: 2.5em;
   }
  
-  .efeito-fusao::after {
-   height: 75px;; 
+  /* 4. Diminui o degradê */
+  .efeito-fusao::after,
+  #hero-carousel::after {
+    height: 75px; 
   }
 }
+
+/* mudando código agr */
