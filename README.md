@@ -1,39 +1,33 @@
 # Legado Automotivo (Versão Bootstrap) 🚗💨
 
+Você pode acessar o site online neste link:
+**[projeto-legado-automotivo-bootstrap.vercel.app](https://projeto-legado-automotivo-bootstrap.vercel.app)**
+ 
 Esta é a segunda versão do projeto "Legado Automotivo", totalmente refatorada para utilizar o framework **Bootstrap 5**. Este projeto foi desenvolvido para um trabalho acadêmico com o objetivo de demonstrar o domínio sobre componentes de UI/UX, o sistema de Grid responsivo e a personalização de um framework CSS moderno.
 
-> ➡️ **Procurando a versão original?** A primeira versão deste site, construída do zero com CSS puro (Flexbox, CSS Grid) e JavaScript "vanilla", pode ser encontrada [neste repositório](https://github.com/GabrielSSegatto/legado-automotivo-css-puro). *(Substitua pelo link do seu repositório antigo)*
-
-### 📸 Screenshot da Página Inicial
-
-![Screenshot do Projeto Legado Automotivo com Bootstrap](img/screenshot-bootstrap.png)
-*(Substitua pelo nome do seu arquivo de screenshot)*
-
----
+> ➡️ **Procurando a versão original?** A primeira versão deste site, construída do zero com CSS puro (Flexbox, CSS Grid) e JavaScript "vanilla", pode ser encontrada [neste repositório](https://github.com/GabrielSSegatto/Projeto-legado-automotivo).
 
 ## 💡 O Conceito: Chassi Bootstrap, Pintura Autoral
 
 O maior desafio deste projeto não foi apenas *usar* o Bootstrap, mas *dominá-lo*. Em vez de criar um site com a aparência genérica do Bootstrap, o objetivo foi usá-lo como um "chassi" de engenharia para:
 
 1.  **O Chassi (Bootstrap):** Utilizar seus componentes robustos e testados (Navbar, Carousel, Grid) para garantir uma base 100% responsiva, economizando tempo de desenvolvimento.
-2.  **A Pintura (CSS Personalizado):** Aplicar uma camada de estilos personalizados (`style.css`) para sobrescrever (override) as regras padrão do Bootstrap, implementando a identidade visual única do "Legado Automotivo" (a paleta de cores preta e dourada, as fontes `Oswald` e `Lato`, e os efeitos visuais).
+2.  **A Pintura (CSS Personalizado):** Aplicar uma camada de estilos personalizados (`style.css`) para sobrescrever (override) as regras padrão do Bootstrap, implementando a identidade visual única do "Legado Automotivo".
 
 ---
-
-## ✨ Funcionalidades e Requisitos Cumpridos
-
-Este site implementa todos os requisitos da atividade, demonstrando o uso de diversos componentes do Bootstrap e JavaScript para interatividade.
 
 ### Componentes Bootstrap Utilizados
 
 * **Layout e Grid:** O site é totalmente estruturado com o Grid System do Bootstrap (`.container`, `.row`, `.col-lg-4`, `.col-md-6`, etc.), garantindo responsividade mobile-first.
-* **Navbar:** Um menu de navegação completo (`.navbar`), responsivo (`.navbar-toggler`), fixo no topo (`.sticky-top`) e com um componente `.dropdown` para os modelos.
+* **Navbar:** Um menu de navegação completo (`.navbar`), responsivo (`.navbar-toggler`) e com um componente `.dropdown` para os modelos.
 * **Carousel (x2):**
     1.  Um carrossel de destaque na página inicial (`#hero-carousel`) para o banner principal.
-    2.  Um segundo carrossel para a seção de **Depoimentos** (`#carouselDepoimentos`), como solicitado.
-* **Accordion (x3):** O componente `.accordion` foi usado na `index.html` para a seção "A Essência do Legado", cumprindo o requisito de no mínimo 2 acordeões.
+    2.  Um segundo carrossel para a seção de **Depoimentos** (`#carouselDepoimentos`).
+* **Accordion (x3):** O componente `.accordion` foi usado na `index.html` para a seção "A Essência do Legado".
 * **Cards:** Componentes `.card` padronizados para exibir os carros de forma coesa nas seções de destaque e na página "Modelos".
 * **Formulários:** A página de "Contato" utiliza os componentes de formulário do Bootstrap (`.form-control`, `.form-select`, `.form-check`) para um layout limpo e alinhado.
+
+---
 
 ### Personalização e Funcionalidades Extras
 
@@ -44,6 +38,14 @@ Este site implementa todos os requisitos da atividade, demonstrando o uso de div
     * **Controle de Carrossel por Teclado:** O carrossel principal pode ser controlado pelas setas do teclado e pelas teclas A/D.
     * **Intersection Observer:** A funcionalidade de teclado acima só é ativada quando o carrossel está visível na tela, otimizando a performance e melhorando a UX.
     * **Aviso Inicial:** Um aviso (toast) aparece na primeira visita da sessão usando `sessionStorage` para "lembrar" que o usuário já o fechou.
+
+---
+
+## 🛠️ Tecnologias Utilizadas
+- HTML5 / CSS3
+- Bootstrap 5.3
+- JavaScript (ES6+)
+- Git e GitHub
 
 ---
 
