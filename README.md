@@ -1,5 +1,7 @@
 # Legado Automotivo (Versão Bootstrap) 🚗💨
 
+ 🔗 **Acesse o site online:** https://vercel.com/gabrielssegattos-projects/projeto-legado-automotivo-bootstrap
+ 
 Esta é a segunda versão do projeto "Legado Automotivo", totalmente refatorada para utilizar o framework **Bootstrap 5**. Este projeto foi desenvolvido para um trabalho acadêmico com o objetivo de demonstrar o domínio sobre componentes de UI/UX, o sistema de Grid responsivo e a personalização de um framework CSS moderno.
 
 > ➡️ **Procurando a versão original?** A primeira versão deste site, construída do zero com CSS puro (Flexbox, CSS Grid) e JavaScript "vanilla", pode ser encontrada [neste repositório](https://github.com/GabrielSSegatto/Projeto-legado-automotivo).
