@@ -24,6 +24,8 @@ O maior desafio deste projeto não foi apenas *usar* o Bootstrap, mas *dominá-l
 * **Cards:** Componentes `.card` padronizados para exibir os carros de forma coesa nas seções de destaque e na página "Modelos".
 * **Formulários:** A página de "Contato" utiliza os componentes de formulário do Bootstrap (`.form-control`, `.form-select`, `.form-check`) para um layout limpo e alinhado.
 
+---
+
 ### Personalização e Funcionalidades Extras
 
 * **Identidade Visual (Override de CSS):** O `style.css` utiliza **Variáveis CSS (`:root`)** para definir a paleta de cores do projeto (ex: `--cor-destaque`) e sobrescrever as cores e fontes padrão do Bootstrap.
