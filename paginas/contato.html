@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>contato - Legado Automotivo (Bootstrap)</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+  <link href="../css/estilo.css" rel="stylesheet">
+</head>
+
+<body>
+
+  <!-- navbar -->
+  <header>
+    <nav class="navbar navbar-expand-lg sticky-top" data-bs-theme="dark">
+      <div class="container-fluid">
+
+        <a class="navbar-brand" href="../index.html">
+          <img src="../imagens/Gemini_Generated_Image_38nso038nso038ns_1_-removebg-preview(1).png"
+            alt="Legado Automotivo Logo" width="60">
+          LEGADO AUTOMOTIVO
+        </a>
+
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuLegado"
+          aria-controls="menuLegado" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="menuLegado">
+
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                Modelos
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="omega-historia.html">Chevrolet Omega</a></li>
+                <li><a class="dropdown-item" href="em-breve.html">Nissan Skyline</a></li>
+                <li>
+                  <hr class="dropdown-divider">
+                </li>
+                <li><a class="dropdown-item" href="modelos.html">Ver todos</a></li>
+              </ul>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="sugestoes.html">Sugestões</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="sobre.html">Sobre</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="contato.html">Contato</a>
+            </li>
+          </ul>
+
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="pagina-hero contato-hero efeito-fusao">
+      <div class="pagina-hero-conteudo container text-center">
+        <h1>Entre em Contato</h1>
+        <p>Envie sua sugestão, sua história ou diga um oi. Estamos prontos para ouvir.</p>
+      </div>
+    </section>
+
+    <section class="container my-5">
+      <div class="row g-5">
+        <div class="col-lg-7">
+          <h2 class="display-5">Envie sua Mensagem</h2>
+          <p class="lead text-body-secondary">Preencha o formulário abaixo e nossa equipe responderá o mais breve
+            possível.</p>
+
+          <form action="https://formsubmit.co/gabriels080404@gmail.com" method="POST" class="mt-4">
+
+            <div class="mb-3"> <label for="nome" class="form-label">Seu Nome:</label>
+              <input type="text" class="form-control" id="nome" name="nome" required>
+            </div>
+
+            <div class="mb-3">
+              <label for="email" class="form-label">Seu E-mail:</label>
+              <input type="email" class="form-control" id="email" name="email" required>
+            </div>
+
+            <div class="mb-3">
+              <label for="assunto" class="form-label">Assunto:</label>
+              <select class="form-select" id="assunto" name="assunto">
+                <option>Sugestão para o site</option>
+                <option>Envio de História</option>
+                <option>Outros</option>
+              </select>
+            </div>
+
+            <div class="mb-3">
+              <label for="mensagem" class="form-label">Sua Mensagem:</label>
+              <textarea class="form-control" id="mensagem" name="mensagem" rows="5" required></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-primary btn-lg">Enviar Mensagem</button>
+          </form>
+        </div>
+
+        <div class="col-lg-5">
+          <h2 class="display-5">Nossa Sede</h2>
+          <p class="lead text-body-secondary">O projeto é digital, mas aqui está a localização fictícia da nossa
+            "Garagem".</p>
+
+          <div class="mapa-container shadow rounded">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1919.5303221895708!2d-47.93930400000001!3d-15.800756!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x935a3066cf8b9e97%3A0x42ad86b9311b1c3b!2sPar%C3%B3quia%20Santa%20Teresinha!5e0!3m2!1spt-BR!2sbr!4v1762998358209!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </div>
+
+          <ul class="list-unstyled mt-4">
+            <li class="fs-5"><i class="fas fa-envelope me-2 text-warning"></i> gabriels080404@gmail.com</li>
+            <li class="fs-5"><i class="fab fa-github me-2 text-warning"></i> @GabrielSSegatto</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- rodape -->
+  <footer class="container-fluid mt-5 secao-rodape">
+
+    <div class="container">
+
+      <div class="row py-5">
+
+        <div class="col-lg-4 col-md-6 mb-4">
+          <h4 class="text-uppercase">Legado Automotivo</h4>
+          <p>Um espaço dedicado a celebrar os ícones sobre rodas que marcaram gerações.</p>
+
+          <div class="fs-4"> <a href="https://github.com/GabrielSSegatto" class="me-3" title="GitHub">
+              <i class="fab fa-github"></i>
+            </a>
+            <a href="mailto:gabriels080404@gmail.com" class="me-3" title="Email">
+              <i class="fas fa-envelope"></i>
+            </a>
+            <a href="#" class="me-3" title="YouTube (Exemplo)">
+              <i class="fab fa-youtube"></i>
+            </a>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 mb-4">
+          <h4 class="text-uppercase">Navegação</h4>
+          <ul class="list-unstyled">
+            <li><a href="modelos.html" class="nav-link-footer">Modelos</a></li>
+            <li><a href="sobre.html" class="nav-link-footer">Sobre</a></li>
+            <li><a href="contato.html" class="nav-link-footer">Contato</a></li>
+            <li><a href="sugestoes.html" class="nav-link-footer">Sugestões</a></li>
+          </ul>
+        </div>
+
+        <div class="col-lg-4 col-md-12 mb-4">
+          <h4 class="text-uppercase">Links Úteis</h4>
+          <ul class="list-unstyled">
+            <li><a href="aviso.html" class="nav-link-footer">Aviso Importante</a></li>
+          </ul>
+        </div>
+
+      </div>
+    </div>
+    <div class="rodape-direitos py-3">
+      <p class="text-center m-0"> Copyright &copy; 2025 - Legado Automotivo. Todos os direitos reservados.
+      </p>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+    crossorigin="anonymous"></script>
+  <script src="../js/script.js"></script>
+</body>
+
+</html>
