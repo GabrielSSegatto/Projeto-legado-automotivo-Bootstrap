@@ -8,9 +8,35 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
   <link href="css/estilo.css" rel="stylesheet">
+  <link rel="icon" href="imagens/Gemini_Generated_Image_38nso038nso038ns_1_-removebg-preview(1).png" type="image/png">
 </head>
 
 <body>
+
+  <div id="avisoLegal" class="position-fixed bottom-0 end-0 p-4" style="z-index: 9999; display: none;">
+
+    <div class="card bg-dark border-warning shadow-lg" style="max-width: 350px;">
+
+      <div class="card-header border-warning text-warning d-flex justify-content-between align-items-center">
+        <span class="fw-bold"><i class="fas fa-info-circle me-2"></i>Aviso Acadêmico</span>
+        <button type="button" class="btn-close btn-close-white" id="btnFecharAviso" aria-label="Close"></button>
+      </div>
+
+      <div class="card-body">
+        <p class="card-text text-light small">
+          Este site é um <strong>projeto estritamente educacional</strong> sem fins lucrativos. O unico carro com a página completa é o Chevrolet Omega.
+        </p>
+        <p class="card-text text-light small">
+          Para entender melhor o propósito e os direitos de uso de imagem, leia nosso aviso completo.
+        </p>
+
+        <div class="d-grid gap-2">
+          <a href="paginas/aviso.html" class="btn btn-outline-warning btn-sm">Ler Termos Legais</a>
+        </div>
+      </div>
+
+    </div>
+  </div>
 
   <!-- navbar -->
   <header>
@@ -45,10 +71,6 @@
                 </li>
                 <li><a class="dropdown-item" href="paginas/modelos.html">Ver todos</a></li>
               </ul>
-            </li>
-
-            <li class="nav-item">
-              <a class="nav-link" href="paginas/sugestoes.html">Sugestões</a>
             </li>
 
             <li class="nav-item">
@@ -292,7 +314,7 @@
 
   </main>
 
-    <!-- rodape -->
+  <!-- rodape -->
   <footer class="container-fluid mt-5 secao-rodape">
 
     <div class="container">
@@ -321,7 +343,6 @@
             <li><a href="paginas/modelos.html" class="nav-link-footer">Modelos</a></li>
             <li><a href="paginas/sobre.html" class="nav-link-footer">Sobre</a></li>
             <li><a href="paginas/contato.html" class="nav-link-footer">Contato</a></li>
-            <li><a href="paginas/sugestoes.html" class="nav-link-footer">Sugestões</a></li>
           </ul>
         </div>
 

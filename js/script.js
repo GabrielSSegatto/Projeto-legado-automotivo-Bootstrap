@@ -31,3 +31,50 @@ if (heroCarouselElement) {
 
     heroObserver.observe(heroCarouselElement);
 }
+
+// --- LÓGICA DE BUSCA (MODELOS) ---
+
+const searchInput = document.getElementById('buscaCarro');
+const cardsContainer = document.querySelector('.cards-container');
+
+if (searchInput && cardsContainer) {
+    searchInput.addEventListener('input', (e) => {
+        const termo = e.target.value.toLowerCase();
+        // Seleciona todos os wrappers de cartão
+        const cartoes = cardsContainer.querySelectorAll('.car-card-wrapper');
+
+        cartoes.forEach(cartao => {
+            // Busca o título dentro do cartão
+            const titulo = cartao.querySelector('.card-title').textContent.toLowerCase();
+            
+            if (titulo.includes(termo)) {
+                // Mostra o cartão (remove d-none se estiver lá)
+                cartao.classList.remove('d-none');
+            } else {
+                // Esconde o cartão usando a classe utilitária do Bootstrap
+                cartao.classList.add('d-none');
+            }
+        });
+    });
+}
+
+// --- LÓGICA DO AVISO LEGAL (POP-UP) ---
+document.addEventListener('DOMContentLoaded', () => {
+    const avisoLegal = document.getElementById('avisoLegal');
+    const btnFechar = document.getElementById('btnFecharAviso');
+
+    if (avisoLegal && btnFechar) {
+
+        if (!sessionStorage.getItem('avisoLegalVisto')) {
+            
+            avisoLegal.style.display = 'block';
+            avisoLegal.classList.add('fade-in-up'); // Vamos criar essa animação no CSS rapidinho
+        }
+
+        btnFechar.addEventListener('click', () => {
+            avisoLegal.style.display = 'none';
+            
+            sessionStorage.setItem('avisoLegalVisto', 'true');
+        });
+    }
+});
